@@ -1,0 +1,46 @@
+
+package aplicacionestaller2;
+
+import javax.swing.JOptionPane;
+
+public class Temperatura {
+    Celcius c;
+    Farenheit f;
+    Kelvin k;
+    
+    public static void main(String[] args) {
+        Temperatura t = new Temperatura();
+        t.solicitar();
+    }
+    public void solicitar(){
+        int opcion;
+        JOptionPane.showMessageDialog(null, "Programa trasforma medidas de temperatura");
+        opcion = Integer.parseInt(JOptionPane.showInputDialog("Menu:\n"
+            + "1. Para ingresar grados Celcius\n"
+                + "2. Para ingresar grados Farenheit \n"
+                + "3. Para ingresar grados Kelvin"));
+        double grados =Double.parseDouble(JOptionPane.showInputDialog("Ingrese los grados: ")) ;
+        
+        switch(opcion){
+            case 1:
+                c = new Celcius();
+                JOptionPane.showMessageDialog(null, "Celcius a Fareheit: "+c.calculo(grados));
+                break;
+            case 2:
+                f = new Farenheit();
+                JOptionPane.showMessageDialog(null, "Fareheit a Kelvin: "+f.calculo(grados));
+                break;
+            case 3:
+                k = new Kelvin();
+                JOptionPane.showMessageDialog(null, "Kelvin a Celcius: "+k.calculo(grados));
+                break;
+            default:
+                JOptionPane.showMessageDialog(null, "OPCION NO VALIDA");
+                break;
+        
+        
+        }
+                
+        
+    }
+}
