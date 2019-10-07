@@ -1,0 +1,13 @@
+
+package aplicacionestaller2;
+
+public class Celcius implements IConversion{
+
+    @Override
+    public double calculo(double grados) {
+       double temp;
+       temp = grados*(9/5)+35;
+        return temp;
+    }
+    
+}
