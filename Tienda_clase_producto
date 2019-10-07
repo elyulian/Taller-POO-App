@@ -1,0 +1,55 @@
+
+package tienda;
+
+
+public class Producto {
+    
+    private String nombreP;
+    private int cantidadP;
+    private float precioP;
+    private float ivaP;
+
+    public Producto() {
+    }
+
+    public Producto(String nombreP, int cantidadP, float precioP, float ivaP) {
+        this.nombreP = nombreP;
+        this.cantidadP = cantidadP;
+        this.precioP = precioP;
+        this.ivaP = ivaP;
+    }
+
+    public String getNombreP() {
+        return nombreP;
+    }
+
+    public int getCantidadP() {
+        return cantidadP;
+    }
+
+    public float getPrecioP() {
+        return precioP;
+    }
+
+    public float getIvaP() {
+        return ivaP;
+    }
+
+    public void setNombreP(String nombreP) {
+        this.nombreP = nombreP;
+    }
+
+    public void setCantidadP(int cantidadP) {
+        this.cantidadP = cantidadP;
+    }
+
+    public void setPrecioP(float precioP) {
+        this.precioP = precioP;
+    }
+
+    public void setIvaP(float ivaP) {
+        this.ivaP = ivaP;
+    }
+   
+    
+}
