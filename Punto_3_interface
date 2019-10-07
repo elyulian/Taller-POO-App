@@ -1,0 +1,7 @@
+
+package aplicacionestaller2;
+
+public interface IConversion {
+    
+    public double calculo(double grados);
+}
