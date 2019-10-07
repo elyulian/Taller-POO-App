@@ -1,0 +1,14 @@
+
+package aplicacionestaller2;
+
+
+public class Farenheit implements IConversion{
+
+    @Override
+    public double calculo(double grados) {
+       double a;
+        a= grados+273.15;
+        return a;
+    }
+    
+}
