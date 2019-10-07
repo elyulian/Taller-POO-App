@@ -1,0 +1,41 @@
+package aplicacionestaller;
+
+public class Funcion {
+    
+    private final double PI=3.1516;
+    private double radio;
+
+    public Funcion() {
+    }
+
+    public Funcion(double radio) {
+        this.radio = radio;
+    }
+
+    public void setRadio(double radio) {
+        this.radio = radio;
+    }
+
+    public double getPI() {
+        return PI;
+    }
+
+    public double getRadio() {
+        return radio;
+    }
+    
+    
+    public double calculaArea(double radio){
+    double a;
+    a =(Math.pow(radio, 2)*PI*4);
+    return a;
+    }
+   
+    public double calcularVolumne(double radio){
+    double v;
+    
+    v =  (4/3 * PI * Math.pow(radio, 3));
+    return v;
+    }
+
+}
