@@ -1,0 +1,25 @@
+
+package aplicacionestaller;
+
+import javax.swing.JOptionPane;
+
+
+public class Principal {
+   /* 
+    Funcion es;
+    public static void main(String[] args) {
+        
+        Principal Po = new Principal();
+         Po.impresion();
+    }
+    */
+    public void impresion(){
+        es = new Funcion();
+        double a = es.calculaArea(4);
+        double b = es.calcularVolumne(5);
+        System.out.println("El valor del area es"+a);
+        System.out.println("El valor del volumen es: "+b);
+    
+    }
+    
+}
